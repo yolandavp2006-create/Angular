@@ -1,0 +1,22 @@
+# Dependencias
+**/node_modules/
+
+# Salidas de compilación y cachés de Angular
+**/dist/
+**/.angular/cache/
+**/out-tsc/
+**/tmp/
+**/bazel-out/
+
+# Informes de pruebas y cobertura
+**/coverage/
+**/.nyc_output/
+
+# Cachés y archivos generados
+**/.sass-cache/
+*.log
+
+# Archivos del sistema y del editor
+.DS_Store
+Thumbs.db
+.history/
