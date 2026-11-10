@@ -1,0 +1,8 @@
+@for (producto of productos; track producto.id) {
+    <app-tarjeta-producto
+      [nombre]="producto.nombre"
+      [precio]="producto.precio"
+      [disponible]="producto.disponible"
+      (productoAnadido)="reenviarProducto(producto.nombre)">
+    </app-tarjeta-producto>
+}

@@ -1,0 +1,11 @@
+<p>Carrito: {{ carrito.length }}</p>
+@for (p of carrito; track $index) {
+  <div class="carrito-item">
+    {{ p }}
+  </div>
+}
+
+<app-catalogo-productos
+  [productos]="productos"
+  (productoAnadido)="actualizarCarrito($event)">
+</app-catalogo-productos>

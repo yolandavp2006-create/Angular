@@ -1,0 +1,43 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: #f5f7fb;
+  color: #202938;
+  font-family: Arial, sans-serif;
+}
+
+app-catalogo-productos {
+  display: grid;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+app-catalogo-productos + p {
+  max-width: 900px;
+  margin: 0 auto 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.carrito-item {
+  max-width: 900px;
+  margin: 0.5rem auto;
+  padding: 0.9rem 1rem;
+  border: 1px solid #dfe3ea;
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+  color: #273142;
+  box-shadow: 0 3px 10px rgba(31, 41, 55, 0.06);
+}
+
+@media (max-width: 600px) {
+  :host {
+    padding: 1rem;
+  }
+}

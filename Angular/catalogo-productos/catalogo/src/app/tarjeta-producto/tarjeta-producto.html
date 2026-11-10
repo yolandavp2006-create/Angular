@@ -1,0 +1,11 @@
+<div class="tarjeta-producto" [ngClass]="{ agotado: !disponible }">
+  <p>{{ nombre }} - {{ precio | currency: 'EUR' }}</p>
+  <button (click)="addProducto(nombre)" [disabled]="!disponible">
+    Añadir al carrito
+  </button>
+  @if (disponible) {
+    <p>En stock</p>
+  } @else {
+    <p id="texto-agotado">Agotado</p>
+  }
+</div>
